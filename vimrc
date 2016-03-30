@@ -212,9 +212,10 @@ let g:Syntastic_check_on_open=1
 set laststatus=2
 
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tableline#enable = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline#extensions#tableline#enable = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_theme='powerlineish'
 
 "***********************************************************
 "           html5
@@ -241,8 +242,14 @@ inoremap <expr><BS>     neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>    neocomplcache#close_popup()
 inoremap <expr><C-e>    noeocomplcache#cancel_popup()
 
-autocmd FileType cdd setlocal omnifunc=csscomplete#completeCSS
+autocmd FileType css setlocal omnifunc=csscomplete#completeCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#completeTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#completeJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#completeTags
+
+"***************************************************************************
+"           supertab
+"*********************************************************************************
+
+let g:SuperTabDefaultCompletionType="context"
