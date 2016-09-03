@@ -128,9 +128,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'othree/html5.vim'
 "Plugin 'Shougo/neocomplcache.vim'
-Plugin 'artur-shaik/vim-javacomplete2'
-Plugin 'airblade/vim-rooter'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'artur-shaik/vim-javacomplete2'
+"Plugin 'airblade/vim-rooter'
+"Plugin 'Valloric/YouCompleteMe'
 
 
 " All of your Plugins must be added before tht fllowing line
@@ -232,25 +232,25 @@ let g:html5_event_handler_attribute_complete = 0
 "****************************************************************
 
 
-"let g:acp_enableAtStartup = 0
-"let g:neocomplcache_enable_at_startup = 1
-"let g:neocomplcache_enable_smart_case = 1
-"let g:neocomplcache_min_syntax_length = 3
-"let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+let g:acp_enableAtStartup = 0
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
-"inoremap <expr> <C-g>   neocomplcache#undo_complrtion()
-"inoremap <expr> <C-l>   neocomplcache#complete_common_string()
+inoremap <expr> <C-g>   neocomplcache#undo_complrtion()
+inoremap <expr> <C-l>   neocomplcache#complete_common_string()
 
-"inoremap <expr><C-h>    neocomplcache#smart_close_popup()."\<C-h>"
-"inoremap <expr><BS>     neocomplcache#smart_close_popup()."\<C-h>"
-"inoremap <expr><C-y>    neocomplcache#close_popup()
-"inoremap <expr><C-e>    noeocomplcache#cancel_popup()
+inoremap <expr><C-h>    neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS>     neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y>    neocomplcache#close_popup()
+inoremap <expr><C-e>    noeocomplcache#cancel_popup()
 
-"autocmd FileType css setlocal omnifunc=csscomplete#completeCSS
-"autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#completeTags
-"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#completeJS
-"autocmd FileType python setlocal omnifunc=pythoncomplete#complete
-"autocmd FileType xml setlocal omnifunc=xmlcomplete#completeTags
+autocmd FileType css setlocal omnifunc=csscomplete#completeCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#completeTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#completeJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#completeTags
 
 "***************************************************************************
 "           supertab
@@ -268,19 +268,19 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " To enable smart (trying to guess import option) inserting class imports with
 " F4, add:
-nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
-imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+"nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+"imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
 
 " To enable usual (will ask for import option) inserting class imports with
 " F5, add:
-nmap <F5> <Plug>(JavaComplete-Imports-Add)
-imap <F5> <Plug>(JavaComplete-Imports-Add)
+"nmap <F5> <Plug>(JavaComplete-Imports-Add)
+"imap <F5> <Plug>(JavaComplete-Imports-Add)
 
 " To add all missing imports with F6:
-nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
-imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+"nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
+"imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 
 " To remove all missing imports with F7:
-nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
-imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+"nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+"imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 
