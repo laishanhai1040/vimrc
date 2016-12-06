@@ -285,3 +285,4 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 "nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 "imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 
+"**********************************************************************************
